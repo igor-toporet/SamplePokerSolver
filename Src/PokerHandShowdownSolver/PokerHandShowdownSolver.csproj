@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PokerHandShowdownSolver</RootNamespace>
+    <AssemblyName>PokerHandShowdownSolver</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Conversion\FaceValueConverter.cs" />
+    <Compile Include="Conversion\PlayerHandConverter.cs" />
+    <Compile Include="Detection\FewOfAKindDetector.cs" />
+    <Compile Include="Detection\FlushDetector.cs" />
+    <Compile Include="Detection\HighCardDetector.cs" />
+    <Compile Include="Detection\ThreeOfAKindDetector.cs" />
+    <Compile Include="Detection\TwoOfAKindDetector.cs" />
+    <Compile Include="PlayerHand.cs" />
+    <Compile Include="Conversion\IConverter.cs" />
+    <Compile Include="PlayingCard.cs" />
+    <Compile Include="Conversion\PlayingCardConverter.cs" />
+    <Compile Include="Detection\PokerHandDetector.cs" />
+    <Compile Include="ShowdownSolver.cs" />
+    <Compile Include="Suit.cs" />
+    <Compile Include="PokerHand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FaceValue.cs" />
+    <Compile Include="Pack.cs" />
+    <Compile Include="Conversion\SuitConverter.cs" />
+    <Compile Include="UtilityExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Conversion\_ClassDiagram.cd" />
+    <None Include="Detection\_ClassDiagram.cd" />
+    <None Include="_ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
