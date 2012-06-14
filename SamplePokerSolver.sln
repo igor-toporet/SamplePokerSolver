@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{8F5EA602-C90B-4652-A3C0-6D6232D448BA}"
+	ProjectSection(SolutionItems) = preProject
+		..\Doc\Requirements.txt = ..\Doc\Requirements.txt
+		..\Doc\Unit-tests run instructions.txt = ..\Doc\Unit-tests run instructions.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePokerSolver", "SamplePokerSolver\SamplePokerSolver.csproj", "{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePokerSolver.DemoApp", "SamplePokerSolver.DemoApp\SamplePokerSolver.DemoApp.csproj", "{1DC7C8BC-97CE-461F-97C8-AAF4A1C3935A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamplePokerSolver.UnitTests", "SamplePokerSolver.UnitTests\SamplePokerSolver.UnitTests.csproj", "{ECFCE85A-6B29-4FA1-9F04-137A018F1B7B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DC7C8BC-97CE-461F-97C8-AAF4A1C3935A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC7C8BC-97CE-461F-97C8-AAF4A1C3935A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC7C8BC-97CE-461F-97C8-AAF4A1C3935A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC7C8BC-97CE-461F-97C8-AAF4A1C3935A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82324C0A-6FC6-4B53-9D1C-78D2018F2DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFCE85A-6B29-4FA1-9F04-137A018F1B7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFCE85A-6B29-4FA1-9F04-137A018F1B7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFCE85A-6B29-4FA1-9F04-137A018F1B7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFCE85A-6B29-4FA1-9F04-137A018F1B7B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
