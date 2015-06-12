@@ -33,3 +33,7 @@ Collection of players in the showdown.
     * Joe
 
 Please state any assumptions you've made.
+
+## DemoApp screenshot
+
+![DemoApp screenshot](DemoAppScreenshot.png)
