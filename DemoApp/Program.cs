@@ -24,16 +24,17 @@ namespace SamplePokerSolver.DemoApp
 
         private static void PrintIntro()
         {
-            Print("Hello there!");
-            Print("");
-            Print("You'll be presented a series of randomly created demo cases.");
-            Print("");
-            Print("Each time an new shuffled pack of playing cards will be distributed");
-            Print("by 5 cards to random number of players (from 2 to 10)");
-            Print("");
-            Print("Then will be detected poker hands of each player");
-            Print("and will be printed list of winners.");
-            Print("");
+            Print(@"
+  Hello there!
+
+  You will be presented a series of randomly created demo cases.
+
+  Each time a brand new shuffled pack of playing cards will be distributed
+  by 5 cards to random number of players (from 2 to 10)
+
+  Then will be detected poker hands of each player
+  and the list of winners will be printed.
+");
         }
 
         private static void AskUserToContinueOrExit()
@@ -50,6 +51,7 @@ namespace SamplePokerSolver.DemoApp
 
         private static void ShowDemoCase()
         {
+            Print("");
             Print("---------------------------------------------------");
 
             var pack = new Pack();
@@ -60,17 +62,19 @@ namespace SamplePokerSolver.DemoApp
                     p => new PlayerHand {Player = p, Cards = pack.Deal(5)})
                     .ToArray();
 
-            Print("");
-            Print("Given following random case:");
-            Print("");
+            Print(@"
+  Given following random case:
+");
 
             const string indent = "    ";
             foreach (PlayerHand playerHand in playerHands)
                 Print(indent + playerHand);
 
-            Print("");
-            Print("Were detected following poker hands:");
-            Print("");
+            Print(@"
+
+  Following poker hands were detected:
+
+");
 
             foreach (PlayerHand playerHand in playerHands)
             {
@@ -88,7 +92,7 @@ namespace SamplePokerSolver.DemoApp
             var winners = ShowdownSolver.GetWinners(playerHands).ToList();
 
             Print("");
-            Print(winners.Count == 1 ? "So the winner is:" : "So the winners are:");
+            Print(winners.Count == 1 ? "  So the winner is:" : "  So the winners are:");
             Print("");
 
             foreach (string winner in winners)
